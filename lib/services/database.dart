@@ -30,4 +30,10 @@ class DataBaseMethods {
 
     return res;
   }
+
+  Future<void> deletePost(String postid) async {
+    try {
+      _firebaseFirestones.collection('centers').doc(postid).delete();
+    } catch (e) {}
+  }
 }
