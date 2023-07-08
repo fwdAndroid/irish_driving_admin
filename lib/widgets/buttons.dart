@@ -57,11 +57,9 @@ class AuthButton extends StatelessWidget {
 class JoinButton extends StatelessWidget {
   final Function()? onPressed;
   final String? title;
-  const JoinButton({
-    Key? key,
-    this.onPressed,
-    this.title,
-  }) : super(key: key);
+  final Widget? circular;
+  const JoinButton({Key? key, this.onPressed, this.title, this.circular})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {

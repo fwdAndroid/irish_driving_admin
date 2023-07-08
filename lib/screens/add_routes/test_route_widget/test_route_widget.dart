@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:irish_driving_admin/screens/dashboard/main_screen.dart';
+import 'package:irish_driving_admin/services/database.dart';
 import 'package:irish_driving_admin/widgets/buttons.dart';
 import 'package:irish_driving_admin/widgets/colors.dart';
 import 'package:irish_driving_admin/widgets/textfield.dart';
+import 'package:irish_driving_admin/widgets/utils.dart';
 
 class TestRouteWidget extends StatefulWidget {
   const TestRouteWidget({super.key});
@@ -15,7 +18,7 @@ class _TestRouteWidgetState extends State<TestRouteWidget> {
   Widget build(BuildContext context) {
     TextEditingController addTestRoute = TextEditingController();
     TextEditingController addTestLocation = TextEditingController();
-    bool isLoading = false;
+    bool isLoading = true;
 
     return Padding(
       padding: const EdgeInsets.all(8.0),
@@ -49,7 +52,30 @@ class _TestRouteWidgetState extends State<TestRouteWidget> {
           ),
           JoinButton(
             title: "Add",
-            onPressed: () {},
+            onPressed: () async {
+              setState(() {});
+              if (addTestRoute.text.isEmpty && addTestLocation.text.isEmpty) {
+                showSnakBar(
+                    "Test Location And Center Name is Required", context);
+              } else if (addTestRoute.text.isEmpty) {
+                showSnakBar("Test Center Name is Required", context);
+              } else if (addTestLocation.text.isEmpty) {
+                showSnakBar("Test Location is Required", context);
+              } else {
+                setState(() {
+                  isLoading = true;
+                });
+                DataBaseMethods()
+                    .addCenters(addTestRoute.text, addTestLocation.text);
+                setState(() {
+                  isLoading = false;
+                });
+                showSnakBar("Test Center Added Successfully", context);
+
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (builder) => MainScreen()));
+              }
+            },
           )
         ],
       ),

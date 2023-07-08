@@ -32,7 +32,7 @@ class _AddTestRoutesState extends State<AddTestRoutes> {
           Center(
             child: Image.asset(
               "assets/logo.png",
-              height: 150,
+              height: 100,
               fit: BoxFit.cover,
             ),
           ),
@@ -58,11 +58,12 @@ class _AddTestRoutesState extends State<AddTestRoutes> {
                 style: TextStyle(
                     color: colorBlack,
                     fontWeight: FontWeight.w400,
-                    fontSize: 16),
+                    fontSize: 13),
+                textAlign: TextAlign.justify,
               ),
             ),
           ),
-          TestRouteWidget()
+          const TestRouteWidget()
         ],
       ),
     );
