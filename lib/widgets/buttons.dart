@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:irish_driving_admin/widgets/colors.dart';
 
 class AuthButton extends StatelessWidget {
   final Function()? onPressed;
@@ -64,35 +65,23 @@ class JoinButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: onPressed ?? () {},
-      child: Center(
-        child: Container(
-          height: 48,
-          width: 343,
-          decoration: BoxDecoration(
-            boxShadow: [
-              BoxShadow(
-                  blurRadius: 30, color: Color(0xff8377C6).withOpacity(.11))
-            ],
-            borderRadius: BorderRadius.circular(8),
-            gradient: const LinearGradient(
-              colors: [Color(0xff246A73), Color(0xff246A73)],
-            ),
+    return Center(
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          fixedSize: Size(343, 48),
+          backgroundColor: mainColor,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12.0),
           ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                "$title",
-                style: const TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w600,
-                    fontSize: 18,
-                    fontFamily: "ProximaNova"),
-              )
-            ],
-          ),
+        ),
+        onPressed: onPressed ?? () {},
+        child: Text(
+          "$title",
+          style: const TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.w600,
+              fontSize: 18,
+              fontFamily: "ProximaNova"),
         ),
       ),
     );
