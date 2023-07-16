@@ -1,5 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:irish_driving_admin/widgets/colors.dart';
 import 'package:irish_driving_admin/widgets/mywidget.dart';
