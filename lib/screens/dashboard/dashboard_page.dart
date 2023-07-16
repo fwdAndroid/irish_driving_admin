@@ -1,11 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:irish_driving_admin/screens/appointmentpage/user_appointment.dart';
 import 'package:irish_driving_admin/screens/auth_screen/login_screen.dart';
 import 'package:irish_driving_admin/screens/dashboard/routes_page.dart';
-import 'package:irish_driving_admin/screens/dashboard/user_details.dart';
+import 'package:irish_driving_admin/screens/dashboard/subscribed_users.dart';
 import 'package:irish_driving_admin/screens/notification/noti.dart';
 import 'package:irish_driving_admin/widgets/dialog.dart';
 import 'package:irish_driving_admin/widgets/utils.dart';
@@ -168,8 +166,10 @@ class _DashboardPageState extends State<DashboardPage> {
             children: [
               InkWell(
                 onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (builder) => UserDetails()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (builder) => SubscribedUsers()));
                 },
                 child: Container(
                   width: 150,
