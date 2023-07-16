@@ -35,6 +35,7 @@ dependencies:
   flutter:
     sdk: flutter
   uuid: ^3.0.7
+  webview_flutter: ^4.2.2
 
 dev_dependencies:
   flutter_lints: ^2.0.0
