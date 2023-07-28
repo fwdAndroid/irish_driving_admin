@@ -6,11 +6,13 @@ class TextFormInputField extends StatelessWidget {
   final String hintText;
   final TextInputType textInputType;
   final Widget? preIcon;
+  final void Function()? onTap;
 
   const TextFormInputField(
       {Key? key,
       required this.controller,
       this.isPass = false,
+      this.onTap,
       this.preIcon,
       required this.hintText,
       required this.textInputType})
@@ -21,6 +23,7 @@ class TextFormInputField extends StatelessWidget {
     final inputBorder =
         OutlineInputBorder(borderSide: Divider.createBorderSide(context));
     return TextField(
+      onTap: onTap,
       decoration: InputDecoration(
         suffixIcon: preIcon,
         fillColor: Colors.white,

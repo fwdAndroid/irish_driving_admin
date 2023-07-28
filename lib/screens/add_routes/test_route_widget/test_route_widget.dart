@@ -5,6 +5,7 @@ import 'package:irish_driving_admin/widgets/buttons.dart';
 import 'package:irish_driving_admin/widgets/colors.dart';
 import 'package:irish_driving_admin/widgets/textfield.dart';
 import 'package:irish_driving_admin/widgets/utils.dart';
+import 'package:flutter_google_places_hoc081098/flutter_google_places_hoc081098.dart';
 
 class TestRouteWidget extends StatefulWidget {
   const TestRouteWidget({super.key});
@@ -14,12 +15,26 @@ class TestRouteWidget extends StatefulWidget {
 }
 
 class _TestRouteWidgetState extends State<TestRouteWidget> {
+  TextEditingController addTestRoute = TextEditingController();
+  TextEditingController addTestLocation = TextEditingController();
+  TextEditingController addTestEndLocation = TextEditingController();
+  bool isLoading = true;
+  String googleApikey = "AIzaSyBffT8plN_Vdcd308KgmzIfGVQN6q-CkAo";
+  bool _isLoading = false;
+  bool loading = false;
+  List latlong = [];
+
+  String location = 'Please move map to A specific location.';
+
+  @override
+  void initState() {
+    addTestLocation.text = "Select Start Test Route";
+    addTestEndLocation.text = "Select End Test Route";
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
-    TextEditingController addTestRoute = TextEditingController();
-    TextEditingController addTestLocation = TextEditingController();
-    bool isLoading = true;
-
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Column(
@@ -39,15 +54,65 @@ class _TestRouteWidgetState extends State<TestRouteWidget> {
             height: 10,
           ),
           const Text(
-            "Add Test Center Location",
+            "Add Test Route Start Location",
             style: TextStyle(
                 color: colorBlack, fontSize: 15, fontWeight: FontWeight.w700),
           ),
           TextFormInputField(
+              onTap: () async {
+                var place = await PlacesAutocomplete.show(
+                    context: context,
+                    apiKey: googleApikey,
+                    mode: Mode.overlay,
+                    types: [],
+                    strictbounds: false,
+                    //google_map_webservice package
+                    onError: (err) {
+                      print(err);
+                    });
+
+                if (place != null) {
+                  setState(() {
+                    location = place.description.toString();
+                    addTestLocation.text = location;
+                  });
+                }
+                ;
+              },
               controller: addTestLocation,
               hintText: "Add Test Center Location",
               textInputType: TextInputType.text),
           const SizedBox(
+            height: 10,
+          ),
+          const Text(
+            "Add Test Route End Location",
+            style: TextStyle(
+                color: colorBlack, fontSize: 15, fontWeight: FontWeight.w700),
+          ),
+          TextFormInputField(
+              onTap: () async {
+                var place = await PlacesAutocomplete.show(
+                    context: context,
+                    apiKey: googleApikey,
+                    mode: Mode.overlay,
+                    types: [],
+                    strictbounds: false,
+                    onError: (err) {
+                      print(err);
+                    });
+
+                if (place != null) {
+                  setState(() {
+                    location = place.description.toString();
+                    addTestEndLocation.text = location;
+                  });
+                }
+              },
+              controller: addTestEndLocation,
+              hintText: "Add Test End Route Location",
+              textInputType: TextInputType.text),
+          SizedBox(
             height: 10,
           ),
           JoinButton(
@@ -65,8 +130,8 @@ class _TestRouteWidgetState extends State<TestRouteWidget> {
                 setState(() {
                   isLoading = true;
                 });
-                DataBaseMethods()
-                    .addCenters(addTestRoute.text, addTestLocation.text);
+                DataBaseMethods().addCenters(addTestRoute.text,
+                    addTestLocation.text, addTestEndLocation.text);
                 setState(() {
                   isLoading = false;
                 });

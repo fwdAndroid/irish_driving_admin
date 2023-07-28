@@ -8,6 +8,7 @@ class DataBaseMethods {
   Future<String> addCenters(
     String centerName,
     String centerLocation,
+    String centerEndLocation,
   ) async {
     String res = "Some Error";
     try {
@@ -15,6 +16,7 @@ class DataBaseMethods {
       TestRouteModel postModel = TestRouteModel(
         centerName: centerName,
         uuid: postId,
+        centerEndLocation: centerEndLocation,
         testLocation: centerLocation,
       );
 

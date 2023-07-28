@@ -3,10 +3,12 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 class TestRouteModel {
   String uuid;
   String testLocation;
+  String centerEndLocation;
   String centerName;
 
   TestRouteModel({
     required this.uuid,
+    required this.centerEndLocation,
     required this.testLocation,
     required this.centerName,
   });
@@ -15,6 +17,7 @@ class TestRouteModel {
   Map<String, dynamic> toJson() => {
         'centerName': centerName,
         "testLocation": testLocation,
+        "centerEndLocation": centerEndLocation,
         'uuid': uuid,
       };
 
@@ -26,6 +29,7 @@ class TestRouteModel {
       testLocation: snapshot['testLocation'],
       centerName: snapshot['centerName'],
       uuid: snapshot['uuid'],
+      centerEndLocation: snapshot['centerEndLocation'],
     );
   }
 }
