@@ -171,6 +171,7 @@ class _TestRouteWidgetState extends State<TestRouteWidget> {
           'centerEndLocation': endPrediction!.description,
           'endGeoPoint': endGeoPoint,
           "startGeoPoint": startGeoPoint,
+          "geopoint": [startGeoPoint, endGeoPoint],
           "centerName": addTestRoute.text
         });
       } else {
