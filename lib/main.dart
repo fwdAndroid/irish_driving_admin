@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:irish_driving_admin/screens/add_routes/gie.dart';
 import 'package:irish_driving_admin/screens/splash/splash.dart';
 
 Future<void> main() async {
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: SplashScreen(),
+      home: MapScreenActivity(),
     );
   }
 }
