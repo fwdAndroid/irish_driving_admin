@@ -71,24 +71,24 @@ class _RoutesPageState extends State<RoutesPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               const Text(
-                                "Test Center Name:",
+                                "Test Center Start Location:",
                                 style: TextStyle(
                                     color: colorBlack,
                                     fontWeight: FontWeight.bold),
                               ),
-                              Text(data['centerName']),
+                              Text(data['testLocation']),
                             ],
                           ),
                           subtitle: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               const Text(
-                                "Test Center Location:",
+                                "Test Center End Location:",
                                 style: TextStyle(
                                     color: colorBlack,
                                     fontWeight: FontWeight.bold),
                               ),
-                              Text(data['testLocation']),
+                              Text(data['centerEndLocation']),
                             ],
                           ),
                           trailing: IconButton(
