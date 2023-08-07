@@ -1,6 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:irish_driving_admin/screens/appointmentpage/user_appointment.dart';
 import 'package:irish_driving_admin/screens/auth_screen/login_screen.dart';
 import 'package:irish_driving_admin/screens/dashboard/routes_page.dart';
 import 'package:irish_driving_admin/screens/dashboard/subscribed_users.dart';
@@ -115,47 +114,6 @@ class _DashboardPageState extends State<DashboardPage> {
                   ),
                 ),
               ),
-              const SizedBox(
-                width: 20,
-              ),
-              // ignore: sized_box_for_whitespace
-              InkWell(
-                onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (builder) => UserAppointment()));
-                },
-                child: Container(
-                  width: 150,
-                  height: 210,
-                  child: Card(
-                    elevation: 5,
-                    shape: BeveledRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0),
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Image.asset('assets/deadline.png'),
-                        ),
-                        const SizedBox(
-                          height: 20,
-                        ),
-                        const Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text(
-                            'Appointments',
-                            style: TextStyle(fontWeight: FontWeight.w800),
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-              )
             ],
           ),
           const SizedBox(
