@@ -26,45 +26,40 @@ class _AddTestRoutesState extends State<AddTestRoutes> {
           ),
         ),
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Center(
-            child: Image.asset(
-              "assets/logo.png",
-              height: 100,
-              fit: BoxFit.cover,
-            ),
-          ),
-          const Align(
-            alignment: Alignment.topLeft,
-            child: Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Text(
-                "Note:",
-                style: TextStyle(
-                    color: colorBlack,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 22),
+      body: const SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Align(
+              alignment: Alignment.topLeft,
+              child: Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Text(
+                  "Note:",
+                  style: TextStyle(
+                      color: colorBlack,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 22),
+                ),
               ),
             ),
-          ),
-          const Align(
-            alignment: Alignment.topLeft,
-            child: Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Text(
-                "On this page, we add our test centers, including their details and locations. This allows users to easily select the nearest location for test drives and driving lessons.",
-                style: TextStyle(
-                    color: colorBlack,
-                    fontWeight: FontWeight.w400,
-                    fontSize: 13),
-                textAlign: TextAlign.justify,
+            Align(
+              alignment: Alignment.topLeft,
+              child: Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Text(
+                  "On this page, we add our test centers, including their details and locations. This allows users to easily select the nearest location for test drives and driving lessons.",
+                  style: TextStyle(
+                      color: colorBlack,
+                      fontWeight: FontWeight.w400,
+                      fontSize: 13),
+                  textAlign: TextAlign.justify,
+                ),
               ),
             ),
-          ),
-          const TestRouteWidget()
-        ],
+            TestRouteWidget()
+          ],
+        ),
       ),
     );
   }
