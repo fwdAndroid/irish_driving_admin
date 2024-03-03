@@ -122,43 +122,43 @@ class _DashboardPageState extends State<DashboardPage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              InkWell(
-                onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (builder) => SubscribedUsers()));
-                },
-                child: Container(
-                  width: 150,
-                  height: 210,
-                  child: Card(
-                    elevation: 5,
-                    shape: BeveledRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0),
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Image.asset('assets/discount.png'),
-                        ),
-                        const SizedBox(
-                          height: 20,
-                        ),
-                        const Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Text(
-                            'Subscribed Users',
-                            style: TextStyle(fontWeight: FontWeight.w800),
-                          ),
-                        )
-                      ],
-                    ),
-                  ),
-                ),
-              ),
+              // InkWell(
+              //   onTap: () {
+              //     Navigator.push(
+              //         context,
+              //         MaterialPageRoute(
+              //             builder: (builder) => SubscribedUsers()));
+              //   },
+              //   child: Container(
+              //     width: 150,
+              //     height: 210,
+              //     child: Card(
+              //       elevation: 5,
+              //       shape: BeveledRectangleBorder(
+              //         borderRadius: BorderRadius.circular(10.0),
+              //       ),
+              //       child: Column(
+              //         mainAxisAlignment: MainAxisAlignment.end,
+              //         children: [
+              //           Padding(
+              //             padding: const EdgeInsets.all(8.0),
+              //             child: Image.asset('assets/discount.png'),
+              //           ),
+              //           const SizedBox(
+              //             height: 20,
+              //           ),
+              //           const Padding(
+              //             padding: EdgeInsets.all(8.0),
+              //             child: Text(
+              //               'Subscribed Users',
+              //               style: TextStyle(fontWeight: FontWeight.w800),
+              //             ),
+              //           )
+              //         ],
+              //       ),
+              //     ),
+              //   ),
+              // ),
               const SizedBox(
                 width: 20,
               ),

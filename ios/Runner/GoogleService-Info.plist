@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>613212709052-mb0n3c4cg25oes4fcgrd2epr7l7nll0g.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.613212709052-mb0n3c4cg25oes4fcgrd2epr7l7nll0g</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>613212709052-a5bhq9p81uf7u307atlv4tbt7fkde0fm.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCkSPohwnR5lQisPXNQrTr1fCRjRpzUwJk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>613212709052</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.irishDrivingAdmin</string>
+	<key>PROJECT_ID</key>
+	<string>irishdriving-d792f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>irishdriving-d792f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:613212709052:ios:b395b1d98c3b77fd1930b9</string>
+</dict>
+</plist>

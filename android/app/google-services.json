@@ -1,34 +1,173 @@
 {
   "project_info": {
-    "project_number": "66111693193",
-    "project_id": "irishdriving-c8ae0",
-    "storage_bucket": "irishdriving-c8ae0.appspot.com"
+    "project_number": "613212709052",
+    "project_id": "irishdriving-d792f",
+    "storage_bucket": "irishdriving-d792f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:66111693193:android:49c568c05675bb2a3a0158",
+        "mobilesdk_app_id": "1:613212709052:android:6b1fde1a83d4e4211930b9",
         "android_client_info": {
           "package_name": "com.example.irish_driving_admin"
         }
       },
       "oauth_client": [
         {
-          "client_id": "66111693193-u7con1skp187peatkbsm3sgg6mlm3fda.apps.googleusercontent.com",
+          "client_id": "613212709052-4qe3n0bua1hhgjek426lqpnuleja6vn1.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAu9ZXmJkR-W3eWFK64Y9dYyqjPa_ugkxM"
+          "current_key": "AIzaSyBD8DnhduNCt7bn3Nlg3c97y0FDlIF0KF4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "66111693193-u7con1skp187peatkbsm3sgg6mlm3fda.apps.googleusercontent.com",
+              "client_id": "613212709052-4qe3n0bua1hhgjek426lqpnuleja6vn1.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "613212709052-3mb9cvus98nvf7u3kcdkpdmhmefm8oba.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.irrishDriving"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:613212709052:android:d81ca838892b5c981930b9",
+        "android_client_info": {
+          "package_name": "com.example.irrish_driving"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "613212709052-kejql6bvd33m0qu6qr2iajp0kgjmdn64.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.irrish_driving",
+            "certificate_hash": "d4b75ea16f980ffe774528ee2e6b0903561052c3"
+          }
+        },
+        {
+          "client_id": "613212709052-4qe3n0bua1hhgjek426lqpnuleja6vn1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD8DnhduNCt7bn3Nlg3c97y0FDlIF0KF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "613212709052-4qe3n0bua1hhgjek426lqpnuleja6vn1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "613212709052-3mb9cvus98nvf7u3kcdkpdmhmefm8oba.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.irrishDriving"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:613212709052:android:9cc0b3839a6bb2311930b9",
+        "android_client_info": {
+          "package_name": "com.example.northernirelandtestroute"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "613212709052-a5bhq9p81uf7u307atlv4tbt7fkde0fm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.northernirelandtestroute",
+            "certificate_hash": "d4b75ea16f980ffe774528ee2e6b0903561052c3"
+          }
+        },
+        {
+          "client_id": "613212709052-4qe3n0bua1hhgjek426lqpnuleja6vn1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD8DnhduNCt7bn3Nlg3c97y0FDlIF0KF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "613212709052-4qe3n0bua1hhgjek426lqpnuleja6vn1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "613212709052-3mb9cvus98nvf7u3kcdkpdmhmefm8oba.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.irrishDriving"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:613212709052:android:87c030061175958f1930b9",
+        "android_client_info": {
+          "package_name": "com.example.scottishrouteapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "613212709052-l79qnl8mm6cav10qjknmkslc90c0d57f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.scottishrouteapp",
+            "certificate_hash": "d4b75ea16f980ffe774528ee2e6b0903561052c3"
+          }
+        },
+        {
+          "client_id": "613212709052-4qe3n0bua1hhgjek426lqpnuleja6vn1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD8DnhduNCt7bn3Nlg3c97y0FDlIF0KF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "613212709052-4qe3n0bua1hhgjek426lqpnuleja6vn1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "613212709052-3mb9cvus98nvf7u3kcdkpdmhmefm8oba.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.irrishDriving"
+              }
             }
           ]
         }

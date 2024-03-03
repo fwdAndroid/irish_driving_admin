@@ -60,18 +60,22 @@ class _UserDetailsState extends State<UserDetails> {
                                 Text(documentSnapshot['name']),
                               ],
                             ),
-                            subtitle: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                const Text(
-                                  "Phone Number:",
-                                  style: TextStyle(
-                                      color: colorBlack,
-                                      fontWeight: FontWeight.bold),
-                                ),
-                                Text(documentSnapshot['phoneNumber']),
-                              ],
-                            ),
+                            // subtitle: Column(
+                            //   crossAxisAlignment: CrossAxisAlignment.start,
+                            //   children: [
+                            //     const Text(
+                            //       "Phone Number:",
+                            //       style: TextStyle(
+                            //           color: colorBlack,
+                            //           fontWeight: FontWeight.bold),
+                            //     ),
+                            //     Text(
+                            //       documentSnapshot['phoneNumber'] != null
+                            //           ? documentSnapshot['phoneNumber']
+                            //           : 'Phone number not available',
+                            //     ),
+                            //   ],
+                            // ),
                             trailing: TextButton(
                                 onPressed: () {
                                   showDialog<void>(
@@ -101,19 +105,6 @@ class _UserDetailsState extends State<UserDetails> {
                                                         FontWeight.w700),
                                               ),
                                               Text(documentSnapshot['email']),
-                                              const Divider(),
-                                              const Text(
-                                                'Date of Birth',
-                                                style: TextStyle(
-                                                    color: colorBlack,
-                                                    fontWeight:
-                                                        FontWeight.w700),
-                                              ),
-                                              Text(
-                                                documentSnapshot['dob'],
-                                                style: TextStyle(
-                                                    color: colorBlack),
-                                              ),
                                               const Divider()
                                             ],
                                           ),
